@@ -81,16 +81,25 @@ function init() {
 		player.moving = false;
 	});
 	
-	canvas.addEventListener('keydown',function(e) {
-		if(e.keyCode == 39) {
+	document.addEventListener('keydown',function(e) {
+		console.log(e.key);
+		if(e.key == 'ArrowRight') {
 			player.moving = true;
 		}
 	});
 
-	canvas.addEventListener('keyup',function(e) {
-		if(e.keyCode == 39) {
+	document.addEventListener('keyup',function(e) {
+		if(e.key == 'ArrowRight') {
 			player.moving = false;
 		}
+	});
+
+	document.addEventListener('touchstart',function(e) {
+			player.moving = true;
+	});
+
+	document.addEventListener('touchend',function(e) {
+			player.moving = false;
 	});
 
 	//diff key
