@@ -80,6 +80,14 @@ function init() {
 	canvas.addEventListener('mouseup',function() {
 		player.moving = false;
 	});
+	
+	canvas.addEventListener('touchstart',function()) {
+		player.moving = true;
+	}
+
+	canvas.addEventListener('touchend',function()) {
+		player.moving = false;
+	}
 
 	//diff key
 	//document.addEventListener('keydown',function(e) {
