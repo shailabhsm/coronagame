@@ -81,17 +81,17 @@ function init() {
 		player.moving = false;
 	});
 	
-	canvas.addEventListener('keydown',function(e)) {
+	canvas.addEventListener('keydown',function(e) {
 		if(e.keyCode == 39) {
 			player.moving = true;
 		}
-	}
+	});
 
-	canvas.addEventListener('keyup',function(e)) {
+	canvas.addEventListener('keyup',function(e) {
 		if(e.keyCode == 39) {
 			player.moving = false;
 		}
-	}
+	});
 
 	//diff key
 	//document.addEventListener('keydown',function(e) {
