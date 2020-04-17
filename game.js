@@ -81,12 +81,16 @@ function init() {
 		player.moving = false;
 	});
 	
-	canvas.addEventListener('touchstart',function()) {
-		player.moving = true;
+	canvas.addEventListener('keydown',function(e)) {
+		if(e.keyCode == 39) {
+			player.moving = true;
+		}
 	}
 
-	canvas.addEventListener('touchend',function()) {
-		player.moving = false;
+	canvas.addEventListener('keyup',function(e)) {
+		if(e.keyCode == 39) {
+			player.moving = false;
+		}
 	}
 
 	//diff key
